@@ -1,0 +1,29 @@
+{
+  "canisters": {
+    "Confess_backend": {
+      "main": "src/Confess_backend/main.mo",
+      "type": "motoko"
+    },
+    "Confess_frontend": {
+      "dependencies": [
+        "Confess_backend"
+      ],
+      "frontend": {
+        "entrypoint": "src/Confess_frontend/src/index.html"
+      },
+      "source": [
+        "src/Confess_frontend/assets",
+        "dist/Confess_frontend/"
+      ],
+      "type": "assets"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
