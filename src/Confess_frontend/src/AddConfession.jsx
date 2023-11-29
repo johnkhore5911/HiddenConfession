@@ -25,7 +25,7 @@ function AddConfession() {
 
   return (
     <div className="wrapper">
-      <h1 className="Heading"> Your Safe Haven for Unspoken Words</h1>
+      {/* <h1 className="Heading"> Your Safe Haven for Unspoken Words</h1> */}
 
       <div className="AddConfessionBox">
         <div>
@@ -61,7 +61,7 @@ function AddConfession() {
           </Link>
 
           <Link to="/ConfessionGallery">
-            <button className="AddBtn1  boxs2">Confession Gallery</button>
+            <button className="AddBtn1 boxs3 boxs2">Confession Gallery</button>
           </Link>
         </div>
       </div>

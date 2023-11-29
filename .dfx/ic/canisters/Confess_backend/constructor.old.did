@@ -1,0 +1,11 @@
+type Review = 
+ record {
+   dislikecount: int;
+   id: text;
+   likecount: int;
+   review: text;
+ };
+service : {
+  addConfession: (text) -> () oneway;
+  getReviews: () -> (vec Review) query;
+}
